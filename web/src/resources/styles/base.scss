@@ -1,0 +1,213 @@
+body,
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "sans-serif";
+    color: #5d5d5d;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+input[readonly] {
+    background: #eee;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    .app-root {
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        overflow: auto;
+        .ant-layout-header {
+            z-index: 1;
+            height: 50px;
+            line-height: 50px;
+            background: #fff;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 0 14px 2px #ccc;
+            border-bottom: 1px solid #ddd;
+            position: absolute;
+            width: 100%;
+            .ant-menu-horizontal {
+                border-bottom: 0;
+                font-size: 12px;
+                .ant-menu-item {
+                    padding: 0 6px;
+                    margin-top: 0;
+                }
+            }
+            .left {
+                line-height: 50px;
+                color: rgba(0, 0, 0, 0.65);
+                &:focus,
+                &:visited {
+                    text-decoration: none;
+                }
+                .icon-logo {
+                    display: inline-block;
+                    background: url(../../resources/images/logo.png);
+                    height: 20px;
+                    width: 20px;
+                    background-size: cover;
+                    vertical-align: middle;
+                    margin-right: 6px;
+                }
+                span {
+                    font-size: 12px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .ant-layout-content {
+            background: #fff;
+            height: 100%;
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+}
+
+@keyframes rotateY{
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+@keyframes rotateX{
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #ccc;
+}
+
+.ant-confirm {
+    .ant-confirm-body {
+        line-height: 40px;
+        .anticon {
+            display: none;
+        }
+        .ant-confirm-content {
+            margin: 0;
+            text-align: center;
+        }
+    }
+    .ant-confirm-btns {
+        text-align: center;
+        float: none !important;
+        .ant-btn {
+            width: 100px;
+            height: 28.22px;
+        }
+    }
+}
+
+.update-modal {
+    .ant-modal-header {
+        padding: 8px 12px;
+    }
+    .ant-form {
+        label,
+        .ant-form-explain {
+            font-size: 12px;
+        }
+    }
+    .ant-form-item {
+        margin-bottom: 0;
+    }
+    .ant-modal-close {
+        .ant-modal-close-x {
+            line-height: 40px;
+            width: 40px;
+        }
+    }
+    .ant-modal-body {
+        max-height: 350px;
+        overflow: auto;
+    }
+    .ant-modal-footer {
+        text-align: center;
+        border-top: none;
+        padding: 0 0 20px;
+        .ant-btn {
+            width: 100px;
+            height: 28.22px;
+        }
+    }
+    .ant-form-item-label label,
+    .ant-input,
+    .ant-select,
+    .ant-btn {
+        font-size: 12px;
+    }
+}
+
+.ant-select-dropdown-menu-item {
+    font-size: 12px;
+}
+
+.textarea-count {
+    position: absolute;
+    line-height: 20px;
+    font-size: 11px;
+    bottom: -8px;
+    right: 10px;
+    padding: 0 6px;
+    background: #eee;
+}
+
+.task-loading-wrapper {
+    line-height: 100px;
+    text-align: center;
+    height: 100%;
+    .anticon {
+        font-size: 30px;
+    }
+}
