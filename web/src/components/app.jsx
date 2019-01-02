@@ -31,6 +31,7 @@ class App extends Component {
         <Menu
           mode="horizontal"
         >
+          <Menu.Item key="resume"><Link to="/resume">简历管理</Link></Menu.Item>
           <Menu.Item key="blog"><Link to="/blog">博客</Link></Menu.Item>
           <Menu.Item key="comment" to="/comment">留言</Menu.Item>
         </Menu>
