@@ -11,9 +11,10 @@ export default class Blog extends Component {
     render() {
         return (
             <article className="blog">
+                <div>博文列表</div>
                 <section>
-                    敬请期待...
-            </section>
+                    空空如也
+                </section>
             </article>
         );
     }

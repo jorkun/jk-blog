@@ -10,14 +10,17 @@ class Index extends Component {
             <article className="index">
                 <div className="layout-content">
                     <section>
-                        梦想
+                        <div className="title">博文</div>
+                        <div className="description">
+                            关于React、JavaScript、算法、数据结构等前端路上的学习成果及心得体会，尽书于此。
+                        </div>
                     </section>
                     <section>
-                        热爱
+                        <div className="title">小小Demo</div>
+                        <div className="description">
+                            在实际项目开发中，个人提炼的一些实用小demo。
+                        </div>
                     </section>
-                    <section>
-                        坚持
-                </section>
                 </div>
                 <footer className="layout-footer">
                     <article className="forent">
